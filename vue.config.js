@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: '/diby-party/'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/diby-party/'
+    : '/'
 }

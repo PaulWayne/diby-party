@@ -18,7 +18,9 @@
           <v-btn icon>
             <v-icon>mdi-menu</v-icon>
           </v-btn>
-          <h2 class="title text-center grow">{{ title }}</h2>
+          <h2 class="text-center grow">
+            <router-link to="/">{{ title }}</router-link>
+           </h2>
         </v-card-title>
         <Parallax />
       </v-card>
@@ -89,3 +91,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+  h2 a {
+    text-decoration: none;
+    color: white;
+  }
+</style>

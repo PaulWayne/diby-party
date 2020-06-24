@@ -7,16 +7,16 @@
         
           <v-container class="fill-height">
             <v-row align="center">
-              <strong class="display-4 font-weight-regular mr-6">14</strong>
+              <strong class="display-4 font-weight-regular mr-6">{{jour}}</strong>
               <v-row>
-                <div class="display-1 font-weight-light mt-10">Juillet</div>
+                <div class="display-1 font-weight-light mt-10">{{mois}}</div>
               </v-row>
             </v-row>
              <v-row justify="end">
-              <div class="display-1 font-weight-regular amber--text  mr-3">30€/pers</div>
+              <div class="display-1 font-weight-regular amber--text  mr-3">{{cotisation}}</div>
             </v-row>
             <v-row justify="end">
-                <div class="display-1 font-weight-light mr-5">Chez Sorbonne</div>
+                <div class="display-1 font-weight-light mr-5">{{lieu}}</div>
             </v-row>
           </v-container>
           
@@ -27,7 +27,11 @@
 export default {
   data () {
     return {
-      image: require('@/assets/banner_1.jpg')
+      image: require('@/assets/banner_2.jpg'),
+      jour: '14',
+      mois: 'Juillet',
+      cotisation: '30€/pers',
+      lieu: 'Chez Sorbonne'
     }
   },
 }

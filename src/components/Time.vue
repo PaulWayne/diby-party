@@ -50,7 +50,7 @@
         {
           color: 'red lighten-1',
           icon: 'mdi-grill',
-          hour: '12h-14h',
+          hour: '12h-18h',
           title: 'Barbecue',
           description: 'Après 2 mois de confinement, il est temps de profiter du beau soleil d’été: le barbecue et ses braises sauront satisfaire les gourmets les plus délicats, Rendez-vous chez Sorbonne pour un moment de convivialité'
         }
