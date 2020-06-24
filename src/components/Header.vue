@@ -44,7 +44,7 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn color="blue darken-1" text @click="open = false">Annuler</v-btn>
-          <v-btn color="blue darken-1" text @click="save">Valider</v-btn>
+          <v-btn color="blue darken-1"  :disabled="disabledBtn" text @click="save">Valider</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -56,6 +56,11 @@ import Parallax from "./Parallax";
 export default {
   props: {
     title: String
+  },
+  computed: {
+    disabledBtn: function () {     
+       return this.name === '' || this.name.length <= 2
+    }
   },
   components :{
     Parallax,
@@ -87,7 +92,7 @@ export default {
           name: this.name,
           joueFoot: this.joueFoot,
       })
-     }
+     },
   }
 }
 </script>
